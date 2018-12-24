@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/theevent/static/media/womensketch.0f27dd3c.jpg"
   },
   {
-    "revision": "adb2d0cb6f8796bff97b",
-    "url": "/theevent/static/css/main.f10d1fc6.chunk.css"
+    "revision": "b2bf485be4a39d321f66",
+    "url": "/theevent/static/css/main.9466bd26.chunk.css"
   },
   {
     "revision": "cf9e5d467ceac623b42d",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/theevent/static/media/hrithiksketch.55b024e1.jpg"
   },
   {
-    "revision": "adb2d0cb6f8796bff97b",
-    "url": "/theevent/static/js/main.adb2d0cb.chunk.js"
+    "revision": "b2bf485be4a39d321f66",
+    "url": "/theevent/static/js/main.b2bf485b.chunk.js"
   },
   {
     "revision": "28f80d94d9fb38fd92569e56e55db6eb",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/theevent/static/media/sketch9.66faec99.jpg"
   },
   {
-    "revision": "152ca4fea57f0f73ba87a25c79e98903",
+    "revision": "19e1e63af3c88b1c48e6d2f8774f80c4",
     "url": "/theevent/index.html"
   }
 ];
