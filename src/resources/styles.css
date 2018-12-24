@@ -28,8 +28,8 @@ body {
 }
 
 .center_wrapper {
-    width: 900px;
-    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -76,7 +76,7 @@ footer .footer_copyright {
 
 
 .carrousel_wrapper {
-    height:700px;
+    
     overflow: hidden;
 }
 
@@ -153,11 +153,14 @@ footer .footer_copyright {
 
 .vn_wrapper {
     display: flex;
+    justify-content: space-around;
+    width: 60em;
     padding: 170px 0px;
 }
 
 .vn_item {
-    width:50%;
+    /* width:50%; */
+    
     color:#ffffff;
     text-align: center;
 }
@@ -225,23 +228,36 @@ footer .footer_copyright {
     color:#2c2c2c;
     font-size: 52px;
 }
+.highlight_wrapper{
+    display: flex;
+    justify-content: center;
+}
+.innerHighlight_wrapper
+{
+    width: 60em;
+}
 
-.highlight_wrapper .highlight_description {
+.highlight_description {
+    text-align: center;
     line-height: 30px;
     font-size: 18px;
     font-weight: 300;
     border-top: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
     padding: 30px 0px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .discount_wrapper {
     display: flex;
+    justify-content: space-around;
     padding: 70px 0px;
 }
 
-.discount_wrapper .discount_porcentage {
-    padding-right: 100px;
+.discount_wrapper .discount_porcentage
+{
+    padding-right: 80px
 }
 
 .discount_wrapper .discount_porcentage span:nth-child(1) {
@@ -259,7 +275,11 @@ footer .footer_copyright {
     display: block;
 }
 
-
+.discount_wrapper .discount_description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .discount_wrapper .discount_description h3 {
     font-size: 34px;
     font-weight: 100;
@@ -278,6 +298,9 @@ footer .footer_copyright {
 ======================*/
 
 .pricing_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 70px 0px;
 }
 
@@ -287,24 +310,24 @@ footer .footer_copyright {
     text-transform: uppercase;
     text-align: center;
     font-size: 50px;
-    margin: 0;
+   
 }
 
 .pricing_wrapper {
     display: flex;
     flex-wrap: wrap;
-}
-.pricing_wrapper .pricing_item{
-    flex-grow: 1;
-    width: 33%;
-    padding: 20px;
-    box-sizing: border-box;
+    justify-content: space-around;
+    
 }
 
-.pricing_wrapper .pricing_inner_wrapper {
-    border:2px solid #ffa800;
-    padding: 50px 20px;
+
+.pricing_wrapper .pricing_item .pricing_inner_wrapper{
+    
+    flex: 1 1 150px;
 }
+
+
+
 
 .pricing_inner_wrapper .pricing_title {
     color: #ffffff;
@@ -334,6 +357,74 @@ footer .footer_copyright {
      text-align: center;
 }
 
+/*====================
+        PRICING 1
+======================*/
+.center_wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.pricing_section1 {
+    padding: 70px 100px;
+}
+
+
+.pricing_section1 h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+}
+
+.pricing_wrapper1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pricing_wrapper1 .pricing_item1{
+    flex-grow: 1;
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.pricing_wrapper1 .pricing_inner_wrapper1 {
+    border:2px solid #ffa800;
+    padding: 50px 20px;
+}
+
+.pricing_inner_wrapper1 .pricing_title1 {
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid #ffa800;
+    padding-bottom: 20px;
+}
+.pricing_inner_wrapper1 .pricing_title1 span:nth-child(1) {
+    font-size: 50px;
+    display: block;
+}
+.pricing_inner_wrapper1 .pricing_title1 span:nth-child(2) {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 300;
+}
+.pricing_inner_wrapper1 .pricing_description1 {
+    color: #b8b8b8;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0px;
+    min-height: 70px;
+}
+
+.pricing_inner_wrapper1 .pricing_buttons1 {
+     text-align: center;
+}
+
+
 
 /*====================
         LOCATION    
@@ -358,3 +449,93 @@ footer .footer_copyright {
     padding: 15px 20px;
     text-align: center;
 }
+
+
+
+@media only screen and (max-width: 700px) {
+    .vn_wrapper {
+        flex-direction: column;
+        height: 60em;
+    }
+    .countdown_wrapper .countdown_time {
+        font-size: 50px;  
+        margin-right: 10px;
+        padding-right: 29px;
+    }
+    
+    .countdown_wrapper .countdown_tag {
+        font-size: 10px;
+        padding-left: 5px;
+    }
+  }
+
+  @media only screen and (max-width: 470px) {
+    
+    .pricing_wrapper1 .pricing_item1{
+        
+        width: 100%;
+    }
+    .countdown_wrapper .countdown_time {
+        font-size: 30px;  
+        margin-right: 8px;
+        padding-right: 18px;
+    }
+    
+    .countdown_wrapper .countdown_tag {
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    .discount_wrapper {
+        
+        flex-direction: column;
+        align-items: center;
+        height: 40em;
+    }
+
+    
+
+    .discount_wrapper .discount_description{
+       align-items: center;
+    }
+    .discount_wrapper .discount_description h3 {
+        text-align: center;
+        font-size: 34px;
+        font-weight: 100;
+        margin: 0px;
+        color: #2c2c2c;
+    }
+    
+    .discount_wrapper .discount_description p { 
+        text-align: center;
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .artist_name {
+        
+        width: unset;
+        height: unset;
+        
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .pricing_wrapper1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing_section1 {
+        padding: unset;
+    }
+  }
+
+  @media only screen and (max-width: 990px) {
+    .pricing_wrapper1 .pricing_item1{
+        
+        width: 80%
+    }
+  }
+ 
+
+ 

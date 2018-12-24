@@ -5,8 +5,10 @@ import Discount from './Discount';
 const Highlights = () => {
     return (
         <div className="highlight_wrapper">
-            <Description />
-            <Discount/>
+            <div className="innerHighlight_wrapper">
+                <Description />
+                <Discount />
+            </div>
         </div>
     );
 };

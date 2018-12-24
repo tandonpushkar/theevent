@@ -21,7 +21,7 @@ class Sketches extends Component {
         `url(${sketch5})`, `url(${sketch6})`, `url(${sketch7})`, `url(${sketch8})`,
         `url(${sketch9})`],
 
-        delay:[0,500,1000,0,500,1000,0,500,1000]
+        delay: [0, 500, 1000, 0, 500, 1000, 0, 500, 1000]
     }
 
 
@@ -31,22 +31,24 @@ class Sketches extends Component {
 
 
             <Zoom
-            delay={this.state.delay[i]}
-            key={i}
+                delay={this.state.delay[i]}
+                key={i}
             >
 
-            <div className="pricing_item">
-                <div className="pricing_inner_wrapper"
+                <div className="pricing_item">
+                    <div className="pricing_inner_wrapper"
 
-                    style={{
-                        background: this.state.images[i],
-                        height: '250px',
-                        width: '230px',
-                        backgroundSize: 'cover'
-                    }}>
+                        style={{
+                            background: this.state.images[i],
+                            height: '250px',
+                            width: '230px',
+                            backgroundSize: 'cover',
+                            marginTop: '20px',
+                            marginBottom: '20px'
+                        }}>
 
+                    </div>
                 </div>
-            </div>
 
             </Zoom>
 
@@ -67,8 +69,8 @@ class Sketches extends Component {
     render() {
         return (
             <div className="bck_red">
-                <div className="center_wrapper pricing_section">
-                    <h2>Sketches</h2>
+                <div className=" pricing_section">
+                    <div><h2>Sketches</h2></div>
 
                     <div className="pricing_wrapper">
                         {this.ShowSketches()}
